@@ -292,6 +292,7 @@ a {
   transition: background-color 0.6s ease-out;
 }
 
+
 /* slideshow */
 .slideshow {
   overflow: hidden;
@@ -1540,3 +1541,4 @@ a.btn-link.text-light:after {
   background-size: cover;
   transition: transform .3s ease-out;
 }
+
