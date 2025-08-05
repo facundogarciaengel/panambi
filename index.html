@@ -16,7 +16,7 @@
   <link rel="stylesheet" type="text/css" href="css/vendor.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -183,26 +183,29 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle active" href="#" id="home" aria-haspopup="true"
-                    aria-expanded="false">Home</a>
+                  <a class="nav-link  active" href="#" id="home" aria-haspopup="true" aria-expanded="false">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="Productos" data-bs-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">Productos</a>
                   <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownShop">
                     <li>
-                      <a href="index.html" class="dropdown-item item-anchor">Cesteria</a>
+                      <a href="#cesteria" class="dropdown-item item-anchor">Cesteria</a>
                     </li>
                     <li>
-                      <a href="index.html" class="dropdown-item item-anchor">Bolsos</a>
+                      <a href="#bolsos" class="dropdown-item item-anchor">Bolsos</a>
                     </li>
                     <li>
-                      <a href="index.html" class="dropdown-item item-anchor">Platos de sitio</a>
+                      <a href="#platos" class="dropdown-item item-anchor">Platos de sitio</a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contactanos por WhatsApp</a>
+                  <a class="nav-link" href="https://wa.me/5491163217661">Contactanos por WhatsApp
+                    <img src="images/whatsapp.png" alt="WhatsApp" style="width: 20px; height: 20px;">
+                  </a>
+
+                  </a>
                 </li>
               </ul>
             </div>
@@ -210,36 +213,15 @@
         </div>
 
         <div class="col-3 col-lg-auto">
-          <ul class="list-unstyled d-flex m-0">
+          <ul class="list-unstyled d-flex m-0 gap-4">
             <li class="d-none d-lg-block">
-              <a href="index.html" class="text-uppercase mx-3">Instagram
+              <a href="https://www.instagram.com/amor.de.panambi/" target="_blank" aria-label="Instagram">
+                <img src="images/instagram.png" alt="Instagram" style="width: 30px; height: 30px;">
               </a>
             </li>
             <li class="d-none d-lg-block">
-              <a href="index.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">Facebook
-              </a>
-            </li>
-            <li class="d-lg-none">
-              <a href="#" class="mx-2">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <use xlink:href="#heart"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="d-lg-none">
-              <a href="#" class="mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
-                aria-controls="offcanvasCart">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <use xlink:href="#cart"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="search-box" class="mx-2">
-              <a href="#search" class="search-button">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <use xlink:href="#search"></use>
-                </svg>
+              <a href="https://www.facebook.com/amor.de.panambi/" target="_blank" aria-label="Facebook">
+                <img src="images/facebook.png" alt="Facebook" style="width: 30px; height: 30px;">
               </a>
             </li>
           </ul>
@@ -388,7 +370,7 @@
 
         <!-- Primer producto: Cestería -->
         <div class="col-md-4">
-          <a href="cesteria" class="cat-item image-zoom-effect text-decoration-none text-dark d-block">
+          <a href="#cesteria" class="cat-item image-zoom-effect text-decoration-none text-dark d-block">
             <div class="image-holder">
               <img src="images/cestas1_mejorada.webp" alt="Cestería" class="product-image img-fluid">
             </div>
@@ -402,7 +384,7 @@
 
         <!-- Segundo producto: Bolsos -->
         <div class="col-md-4">
-          <a href="bolsos" class="cat-item image-zoom-effect text-decoration-none text-dark d-block">
+          <a href="#bolsos" class="cat-item image-zoom-effect text-decoration-none text-dark d-block">
             <div class="image-holder">
               <img src="images/bolsos1_mejorada.webp" alt="Bolsos" class="product-image img-fluid">
             </div>
@@ -416,7 +398,7 @@
 
         <!-- Tercer producto: Platos de Sitio -->
         <div class="col-md-4">
-          <a href="platos" class="cat-item image-zoom-effect text-decoration-none text-dark d-block">
+          <a href="#platos" class="cat-item image-zoom-effect text-decoration-none text-dark d-block">
             <div class="image-holder">
               <img src="images/platos1_mejorada.webp" alt="Platos de Sitio" class="product-image img-fluid">
             </div>
@@ -488,11 +470,11 @@
               <div class="swiper-slide">
                 <div class="product-item image-zoom-effect link-effect">
                   <div class="image-holder position-relative">
-                    <a href="index.html">
+                    <a href="images/cestas1_edited.jpg" data-lightbox="cesteria">
                       <img src="images/cestas1_edited.jpg" alt="categories" class="product-image img-fluid">
                     </a>
                     <div class="product-content">
-                      <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$95.00</span></a>
+                      <a href="#">$95.00</a>
                     </div>
                   </div>
                 </div>
@@ -502,11 +484,11 @@
               <div class="swiper-slide">
                 <div class="product-item image-zoom-effect link-effect">
                   <div class="image-holder position-relative">
-                    <a href="index.html">
+                    <a href="images/cestas2_edited.jpg" data-lightbox="cesteria">
                       <img src="images/cestas2_edited.jpg" alt="categories" class="product-image img-fluid">
                     </a>
                     <div class="product-content">
-                      <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$55.00</span></a>
+                      <a href="#">$95.00</a>
                     </div>
                   </div>
                 </div>
@@ -516,11 +498,11 @@
               <div class="swiper-slide">
                 <div class="product-item image-zoom-effect link-effect">
                   <div class="image-holder position-relative">
-                    <a href="index.html">
+                    <a href="images/cestas3_edited.jpg" data-lightbox="cesteria">
                       <img src="images/cestas3_edited.jpg" alt="categories" class="product-image img-fluid">
                     </a>
                     <div class="product-content">
-                      <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$65.00</span></a>
+                      <a href="#">$95.00</a>
                     </div>
                   </div>
                 </div>
@@ -530,11 +512,11 @@
               <div class="swiper-slide">
                 <div class="product-item image-zoom-effect link-effect">
                   <div class="image-holder position-relative">
-                    <a href="index.html">
+                    <a href="images/cestas4.jpg" data-lightbox="cesteria">
                       <img src="images/cestas4.jpg" alt="categories" class="product-image img-fluid">
                     </a>
                     <div class="product-content">
-                      <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$50.00</span></a>
+                      <a href="#">$95.00</a>
                     </div>
                   </div>
                 </div>
@@ -544,15 +526,16 @@
               <div class="swiper-slide">
                 <div class="product-item image-zoom-effect link-effect">
                   <div class="image-holder position-relative">
-                    <a href="index.html">
+                    <a href="images/cestas5.jpg" data-lightbox="cesteria">
                       <img src="images/cestas5.jpg" alt="categories" class="product-image img-fluid">
                     </a>
                     <div class="product-content">
-                      <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$70.00</span></a>
+                      <a href="#">$95.00</a>
                     </div>
                   </div>
                 </div>
               </div>
+
 
             </div>
             <div class="swiper-pagination"></div>
@@ -570,818 +553,450 @@
         </div>
       </section>
 
-      <section id="new-arrival" class="new-arrival product-carousel py-5 position-relative overflow-hidden">
+      <section id="bolsos" class="new-arrival product-carousel py-5 position-relative overflow-hidden">
         <div class="container">
           <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
             <h4 class="text-uppercase">Bolsos</h4>
-            
+
           </div>
           <div class="swiper product-swiper open-up" data-aos="zoom-out">
             <div class="swiper-wrapper d-flex">
+              <!-- Producto 1 -->
               <div class="swiper-slide">
                 <div class="product-item image-zoom-effect link-effect">
                   <div class="image-holder position-relative">
-                    <a href="index.html">
+                    <a href="images/bolso1mejorado.jpg" data-lightbox="bolsos">
                       <img src="images/bolso1mejorado.jpg" alt="categories" class="product-image img-fluid">
                     </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
+                    <a href="#" class="btn-icon btn-wishlist">
                       <svg width="24" height="24" viewBox="0 0 24 24">
                         <use xlink:href="#heart"></use>
                       </svg>
                     </a>
                     <div class="product-content">
                       <h5 class="element-title text-uppercase fs-5 mt-3">
-                        <a href="index.html">Dark florish onepiece</a>
+                        <a href="#">Dark florish onepiece</a>
                       </h5>
-                      <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$95.00</span></a>
+                      <a href="#">$95.00</a>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <!-- Producto 2 -->
               <div class="swiper-slide">
                 <div class="product-item image-zoom-effect link-effect">
                   <div class="image-holder position-relative">
-                    <a href="index.html">
+                    <a href="images/bolso2mejorado.jpg" data-lightbox="bolsos">
                       <img src="images/bolso2mejorado.jpg" alt="categories" class="product-image img-fluid">
                     </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
+                    <a href="#" class="btn-icon btn-wishlist">
                       <svg width="24" height="24" viewBox="0 0 24 24">
                         <use xlink:href="#heart"></use>
                       </svg>
                     </a>
                     <div class="product-content">
                       <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Baggy Shirt</a>
+                        <a href="#">Baggy Shirt</a>
                       </h5>
-                      <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$55.00</span></a>
+                      <a href="#">$95.00</a>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <!-- Producto 3 -->
               <div class="swiper-slide">
                 <div class="product-item image-zoom-effect link-effect">
                   <div class="image-holder position-relative">
-                    <a href="index.html">
+                    <a href="images/bolso3mejorado.jpg" data-lightbox="bolsos">
                       <img src="images/bolso3mejorado.jpg" alt="categories" class="product-image img-fluid">
                     </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
+                    <a href="#" class="btn-icon btn-wishlist">
                       <svg width="24" height="24" viewBox="0 0 24 24">
                         <use xlink:href="#heart"></use>
                       </svg>
                     </a>
                     <div class="product-content">
                       <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Cotton off-white shirt</a>
+                        <a href="#">Cotton off-white shirt</a>
                       </h5>
-                      <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$65.00</span></a>
+                      <a href="#">$95.00</a>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <!-- Producto 4 -->
               <div class="swiper-slide">
                 <div class="product-item image-zoom-effect link-effect">
                   <div class="image-holder position-relative">
-                    <a href="index.html">
+                    <a href="images/bolso4mejorado.jpg" data-lightbox="bolsos">
                       <img src="images/bolso4mejorado.jpg" alt="categories" class="product-image img-fluid">
                     </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
+                    <a href="#" class="btn-icon btn-wishlist">
                       <svg width="24" height="24" viewBox="0 0 24 24">
                         <use xlink:href="#heart"></use>
                       </svg>
                     </a>
                     <div class="product-content">
                       <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Crop sweater</a>
+                        <a href="#">Crop sweater</a>
                       </h5>
-                      <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$50.00</span></a>
+                      <a href="#">$95.00</a>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <!-- Producto 5 -->
               <div class="swiper-slide">
                 <div class="product-item image-zoom-effect link-effect">
                   <div class="image-holder position-relative">
-                    <a href="index.html">
+                    <a href="images/bolso5mejorado.jpg" data-lightbox="bolsos">
                       <img src="images/bolso5mejorado.jpg" alt="categories" class="product-image img-fluid">
                     </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
+                    <a href="#" class="btn-icon btn-wishlist">
                       <svg width="24" height="24" viewBox="0 0 24 24">
                         <use xlink:href="#heart"></use>
                       </svg>
                     </a>
                     <div class="product-content">
                       <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Crop sweater</a>
+                        <a href="#">Crop sweater</a>
                       </h5>
-                      <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$70.00</span></a>
+                      <a href="#">$95.00</a>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-          <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
-              <use xlink:href="#arrow-left"></use>
-            </svg></div>
-          <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
-              <use xlink:href="#arrow-right"></use>
-            </svg></div>
-        </div>
-      </section>
-
-      <section id="new-arrival" class="new-arrival product-carousel py-5 position-relative overflow-hidden">
-        <div class="container">
-          <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
-            <h4 class="text-uppercase">Platos de Sitio</h4>
-          
-          </div>
-          <div class="swiper product-swiper open-up" data-aos="zoom-out">
-            <div class="swiper-wrapper d-flex">
-              <div class="swiper-slide">
-                <div class="product-item image-zoom-effect link-effect">
-                  <div class="image-holder position-relative">
-                    <a href="index.html">
-                      <img src="images/platomejorado1.JPG" alt="categories" class="product-image img-fluid">
-                    </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </a>
-                    <div class="product-content">
-                      <h5 class="element-title text-uppercase fs-5 mt-3">
-                        <a href="index.html">Dark florish onepiece</a>
-                      </h5>
-                      <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$95.00</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-item image-zoom-effect link-effect">
-                  <div class="image-holder position-relative">
-                    <a href="index.html">
-                      <img src="images/platomejorado2.JPG" alt="categories" class="product-image img-fluid">
-                    </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </a>
-                    <div class="product-content">
-                      <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Baggy Shirt</a>
-                      </h5>
-                      <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$55.00</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-item image-zoom-effect link-effect">
-                  <div class="image-holder position-relative">
-                    <a href="index.html">
-                      <img src="images/platomejorado3.JPG" alt="categories" class="product-image img-fluid">
-                    </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </a>
-                    <div class="product-content">
-                      <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Cotton off-white shirt</a>
-                      </h5>
-                      <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$65.00</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-item image-zoom-effect link-effect">
-                  <div class="image-holder position-relative">
-                    <a href="index.html">
-                      <img src="images/platomejorado4.JPG" alt="categories" class="product-image img-fluid">
-                    </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </a>
-                    <div class="product-content">
-                      <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Crop sweater</a>
-                      </h5>
-                      <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$50.00</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-item image-zoom-effect link-effect">
-                  <div class="image-holder position-relative">
-                    <a href="index.html">
-                      <img src="images/platomejorado5.JPG" alt="categories" class="product-image img-fluid">
-                    </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </a>
-                    <div class="product-content">
-                      <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Crop sweater</a>
-                      </h5>
-                      <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$70.00</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-          <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
-              <use xlink:href="#arrow-left"></use>
-            </svg></div>
-          <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
-              <use xlink:href="#arrow-right"></use>
-            </svg></div>
-        </div>
-      </section>
-
-      <section class="collection bg-light position-relative py-5">
-        <div class="container">
-          <div class="row">
-            <div class="title-xlarge text-uppercase txt-fx domino">Collection</div>
-            <div class="collection-item d-flex flex-wrap my-5">
-
-              <!-- Imagen -->
-              <div class="col-md-6 column-container">
-                <div class="image-holder">
-                  <img src="images/single-image-panambi2.png" alt="collection" class="product-image img-fluid">
-                </div>
-              </div>
-
-              <!-- Texto + WhatsApp -->
-              <div class="col-md-6 column-container bg-white">
-                <div class="collection-content p-5 m-0 m-md-5">
-                  <h3 class="element-title text-uppercase">Quiénes somos</h3>
-                  <p>
-                    Panambí nace del deseo de crear con las manos y el corazón.
-                    Cada pieza representa transformación, belleza y conexión con lo natural.
-                    Trabajamos de forma artesanal, cuidando cada detalle para ofrecer objetos únicos que acompañen tu
-                    día a día.
-                    Creemos en la evolución constante, en el valor de lo hecho con amor y en la fuerza de lo simple.
-                  </p>
-
-                  <!-- Enlace a WhatsApp >
-                  <a href="https://wa.me/549xxxxxxxxxx" target="_blank"
-                    class="text-decoration-none d-inline-flex align-items-center mt-4 fs-5" aria-label="WhatsApp">
-                    Escribinos por WhatsApp
-                    <img src="images/whatsapp.png" alt="WhatsApp" style="width: 24px; height: 24px; margin-left: 8px;">
-                  </a-->
-
                 </div>
               </div>
 
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-      </section>
+        <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
+            <use xlink:href="#arrow-left"></use>
+          </svg></div>
+        <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
+            <use xlink:href="#arrow-right"></use>
+          </svg></div>
+    </div>
+  </section>
 
+  <section id="platos" class="new-arrival product-carousel py-5 position-relative overflow-hidden">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
+        <h4 class="text-uppercase">Platos de Sitio</h4>
 
-      <!--section id="best-sellers" class="best-sellers product-carousel py-5 position-relative overflow-hidden">
-        <div class="container">
-          <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
-            <h4 class="text-uppercase">Best Selling Items</h4>
-            <a href="index.html" class="btn-link">View All Products</a>
-          </div>
-          <div class="swiper product-swiper open-up" data-aos="zoom-out">
-            <div class="swiper-wrapper d-flex">
-              <div class="swiper-slide">
-                <div class="product-item image-zoom-effect link-effect">
-                  <div class="image-holder">
-                    <a href="index.html">
-                      <img src="images/product-item-4.jpg" alt="categories" class="product-image img-fluid">
-                    </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </a>
-                    <div class="product-content">
-                      <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Dark florish onepiece</a>
-                      </h5>
-                      <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$95.00</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-item image-zoom-effect link-effect">
-                  <div class="image-holder">
-                    <a href="index.html">
-                      <img src="images/product-item-3.jpg" alt="product" class="product-image img-fluid">
-                    </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </a>
-                    <div class="product-content">
-                      <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Baggy Shirt</a>
-                      </h5>
-                      <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$55.00</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-item image-zoom-effect link-effect">
-                  <div class="image-holder">
-                    <a href="index.html">
-                      <img src="images/product-item-5.jpg" alt="categories" class="product-image img-fluid">
-                    </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </a>
-                    <div class="product-content">
-                      <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Cotton off-white shirt</a>
-                      </h5>
-                      <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$65.00</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-item image-zoom-effect link-effect">
-                  <div class="image-holder">
-                    <a href="index.html">
-                      <img src="images/product-item-6.jpg" alt="categories" class="product-image img-fluid">
-                    </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </a>
-                    <div class="product-content">
-                      <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Handmade crop sweater</a>
-                      </h5>
-                      <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$50.00</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-item image-zoom-effect link-effect">
-                  <div class="image-holder">
-                    <a href="index.html">
-                      <img src="images/product-item-9.jpg" alt="categories" class="product-image img-fluid">
-                    </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </a>
-                    <div class="product-content">
-                      <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Dark florish onepiece</a>
-                      </h5>
-                      <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$70.00</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-item image-zoom-effect link-effect">
-                  <div class="image-holder">
-                    <a href="index.html">
-                      <img src="images/product-item-10.jpg" alt="categories" class="product-image img-fluid">
-                    </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </a>
-                    <div class="product-content">
-                      <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Cotton off-white shirt</a>
-                      </h5>
-                      <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$70.00</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-          <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
-              <use xlink:href="#arrow-left"></use>
-            </svg></div>
-          <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
-              <use xlink:href="#arrow-right"></use>
-            </svg></div>
-        </div>
-      </section>
-
-      <section class="video py-5 overflow-hidden">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="video-content open-up" data-aos="zoom-out">
-              <div class="video-bg">
-                <img src="images/video-image.jpg" alt="video" class="video-image img-fluid">
-              </div>
-              <div class="video-player">
-                <a class="youtube" href="https://www.youtube.com/embed/pjtsGzQjFM4">
+      </div>
+      <div class="swiper product-swiper open-up" data-aos="zoom-out">
+        <div class="swiper-wrapper d-flex">
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder position-relative">
+                <a href="index.html">
+                  <img src="images/platomejorado1.JPG" alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
                   <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#play"></use>
+                    <use xlink:href="#heart"></use>
                   </svg>
-                  <img src="images/text-pattern.png" alt="pattern" class="text-rotate">
                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section-->
-
-      <section class="testimonials py-5 bg-light">
-        <div class="section-header text-center mt-5">
-          <h3 class="section-title">LO QUE DICEN DE PANAMBI</h3>
-        </div>
-        <div class="swiper testimonial-swiper overflow-hidden my-5">
-          <div class="swiper-wrapper d-flex">
-            <div class="swiper-slide">
-              <div class="testimonial-item text-center">
-                <blockquote>
-                  <p>“Se nota el amor en cada pieza. Todo es delicado y especial.”</p>
-                  <div class="review-title text-uppercase">— Sofía, cliente</div>
-                </blockquote>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item text-center">
-                <blockquote>
-                  <p>“Panambí es arte en forma de objeto cotidiano.”</p>
-                  <div class="review-title text-uppercase">— Mariana</div>
-                </blockquote>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item text-center">
-                <blockquote>
-                  <p>“Compré un regalo y fue un éxito. Desde el empaque hasta el aroma.”</p>
-                  <div class="review-title text-uppercase">— Carla</div>
-                </blockquote>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item text-center">
-                <blockquote>
-                  <p>“No es solo un producto, es un pedacito de calma hecho a mano.”</p>
-                  <div class="review-title text-uppercase">— Lucía</div>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-swiper-pagination d-flex justify-content-center mb-5"></div>
-      </section>
-
-      <!--section id="related-products" class="related-products product-carousel py-5 position-relative overflow-hidden">
-        <div class="container">
-          <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
-            <h4 class="text-uppercase">You May Also Like</h4>
-            <a href="index.html" class="btn-link">View All Products</a>
-          </div>
-          <div class="swiper product-swiper open-up" data-aos="zoom-out">
-            <div class="swiper-wrapper d-flex">
-              <div class="swiper-slide">
-                <div class="product-item image-zoom-effect link-effect">
-                  <div class="image-holder">
-                    <a href="index.html">
-                      <img src="images/product-item-5.jpg" alt="product" class="product-image img-fluid">
-                    </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </a>
-                    <div class="product-content">
-                      <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Dark florish onepiece</a>
-                      </h5>
-                      <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$95.00</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-item image-zoom-effect link-effect">
-                  <div class="image-holder">
-                    <a href="index.html">
-                      <img src="images/product-item-6.jpg" alt="product" class="product-image img-fluid">
-                    </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </a>
-                    <div class="product-content">
-                      <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Baggy Shirt</a>
-                      </h5>
-                      <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$55.00</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-item image-zoom-effect link-effect">
-                  <div class="image-holder">
-                    <a href="index.html">
-                      <img src="images/product-item-7.jpg" alt="product" class="product-image img-fluid">
-                    </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </a>
-                    <div class="product-content">
-                      <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Cotton off-white shirt</a>
-                      </h5>
-                      <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$65.00</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-item image-zoom-effect link-effect">
-                  <div class="image-holder">
-                    <a href="index.html">
-                      <img src="images/product-item-8.jpg" alt="product" class="product-image img-fluid">
-                    </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </a>
-                    <div class="product-content">
-                      <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Handmade crop sweater</a>
-                      </h5>
-                      <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$50.00</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-item image-zoom-effect link-effect">
-                  <div class="image-holder">
-                    <a href="index.html">
-                      <img src="images/product-item-1.jpg" alt="product" class="product-image img-fluid">
-                    </a>
-                    <a href="index.html" class="btn-icon btn-wishlist">
-                      <svg width="24" height="24" viewBox="0 0 24 24">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </a>
-                    <div class="product-content">
-                      <h5 class="text-uppercase fs-5 mt-3">
-                        <a href="index.html">Handmade crop sweater</a>
-                      </h5>
-                      <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>$70.00</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-          <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
-              <use xlink:href="#arrow-left"></use>
-            </svg></div>
-          <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
-              <use xlink:href="#arrow-right"></use>
-            </svg></div>
-        </div>
-      </section>
-
-      <section class="blog py-5">
-        <div class="container">
-          <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
-            <h4 class="text-uppercase">Read Blog Posts</h4>
-            <a href="index.html" class="btn-link">View All</a>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <article class="post-item">
-                <div class="post-image">
-                  <a href="index.html">
-                    <img src="images/post-image1.jpg" alt="image" class="post-grid-image img-fluid">
-                  </a>
-                </div>
-                <div class="post-content d-flex flex-wrap gap-2 my-3">
-                  <div class="post-meta text-uppercase fs-6 text-secondary">
-                    <span class="post-category">Fashion /</span>
-                    <span class="meta-day"> jul 11, 2022</span>
-                  </div>
-                  <h5 class="post-title text-uppercase">
-                    <a href="index.html">How to look outstanding in pastel</a>
+                <div class="product-content">
+                  <h5 class="element-title text-uppercase fs-5 mt-3">
+                    <a href="index.html">Dark florish onepiece</a>
                   </h5>
-                  <p>Dignissim lacus,turpis ut suspendisse vel tellus.Turpis purus,gravida orci,fringilla...</p>
+                  <a href="#">$95.00</a>
                 </div>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="post-item">
-                <div class="post-image">
-                  <a href="index.html">
-                    <img src="images/post-image2.jpg" alt="image" class="post-grid-image img-fluid">
-                  </a>
-                </div>
-                <div class="post-content d-flex flex-wrap gap-2 my-3">
-                  <div class="post-meta text-uppercase fs-6 text-secondary">
-                    <span class="post-category">Fashion /</span>
-                    <span class="meta-day"> jul 11, 2022</span>
-                  </div>
-                  <h5 class="post-title text-uppercase">
-                    <a href="index.html">Top 10 fashion trend for summer</a>
-                  </h5>
-                  <p>Turpis purus, gravida orci, fringilla dignissim lacus, turpis ut suspendisse vel tellus...</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="post-item">
-                <div class="post-image">
-                  <a href="index.html">
-                    <img src="images/post-image3.jpg" alt="image" class="post-grid-image img-fluid">
-                  </a>
-                </div>
-                <div class="post-content d-flex flex-wrap gap-2 my-3">
-                  <div class="post-meta text-uppercase fs-6 text-secondary">
-                    <span class="post-category">Fashion /</span>
-                    <span class="meta-day"> jul 11, 2022</span>
-                  </div>
-                  <h5 class="post-title text-uppercase">
-                    <a href="index.html">Crazy fashion with unique moment</a>
-                  </h5>
-                  <p>Turpis purus, gravida orci, fringilla dignissim lacus, turpis ut suspendisse vel tellus...</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="logo-bar py-5 my-5">
-        <div class="container">
-          <div class="row">
-            <div class="logo-content d-flex flex-wrap justify-content-between">
-              <img src="images/logo1.png" alt="logo" class="logo-image img-fluid">
-              <img src="images/logo2.png" alt="logo" class="logo-image img-fluid">
-              <img src="images/logo3.png" alt="logo" class="logo-image img-fluid">
-              <img src="images/logo4.png" alt="logo" class="logo-image img-fluid">
-              <img src="images/logo5.png" alt="logo" class="logo-image img-fluid">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="newsletter bg-light" style="background: url(images/pattern-bg.png) no-repeat;">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8 py-5 my-5">
-              <div class="subscribe-header text-center pb-3">
-                <h3 class="section-title text-uppercase">Sign Up for our newsletter</h3>
-              </div>
-              <form id="form" class="d-flex flex-wrap gap-2">
-                <input type="text" name="email" placeholder="Your Email Addresss" class="form-control form-control-lg">
-                <button class="btn btn-dark btn-lg text-uppercase w-100">Sign Up</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section-->
-
-      <section class="instagram position-relative">
-        <div class="d-flex justify-content-center w-100 position-absolute bottom-0 z-1">
-          <a href="https://www.instagram.com/amor.de.panambi/" class="btn btn-dark px-5">Seguinos en
-            Instagram</a>
-        </div>
-        <div class="row g-0">
-          <div class="col-6 col-sm-4 col-md-2">
-            <div class="insta-item">
-
-              <img src="images/bolsos1.webp" alt="instagram" class="insta-image img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-2">
-            <div class="insta-item">
-
-              <img src="images/cestas1.webp" alt="instagram" class="insta-image img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-2">
-            <div class="insta-item">
-
-              <img src="images/platos1.webp" alt="instagram" class="insta-image img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-2">
-            <div class="insta-item">
-
-              <img src="images/cestas2.webp" alt="instagram" class="insta-image img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-2">
-            <div class="insta-item">
-
-              <img src="images/cestas3.webp" alt="instagram" class="insta-image img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-2">
-            <div class="insta-item">
-
-              <img src="images/cestas7.webp" alt="instagram" class="insta-image img-fluid">
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer id="footer" class="mt-5">
-        <div class="container">
-          <div class="row d-flex flex-wrap justify-content-between py-5">
-
-            <!-- Columna 1: Logo + texto -->
-            <div class="col-md-4 col-sm-12 mb-4">
-              <div class="footer-menu footer-menu-001">
-                <div class="footer-intro mb-4">
-                  <a href="index.html">
-                    <img src="images/main-logo.png" alt="logo">
-                  </a>
-                </div>
-                <p>Cada pieza está hecha a mano con dedicación y cuidado.
-                  Diseños únicos, inspirados en la transformación y la belleza de lo natural.</p>
               </div>
             </div>
-
-            <!-- Columna 2: Enlaces de categoría -->
-            <div class="col-md-4 col-sm-6 mb-4">
-              <div class="footer-menu footer-menu-002">
-                <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
-                  <li class="menu-item">
-                    <a href="index.html" class="item-anchor">Home</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="cesteria" class="item-anchor">Cestería</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="bolsos" class="item-anchor">Bolsos</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="platos" class="item-anchor">Platos de Sitio</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Columna 3: WhatsApp -->
-            <div class="col-md-4 col-sm-6 mb-4">
-              <div class="footer-menu footer-menu-004 border-animation-left">
-                <h5 class="widget-title text-uppercase mb-4">Escribinos al WhatsApp</h5>
-                <a href="https://wa.me/549XXXXXXXXXX" target="_blank" aria-label="WhatsApp">
-                  <img src="images/whatsapp.png" alt="WhatsApp" style="width: 32px; height: 32px;">
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder position-relative">
+                <a href="index.html">
+                  <img src="images/platomejorado2.JPG" alt="categories" class="product-image img-fluid">
                 </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Baggy Shirt</a>
+                  </h5>
+                  <a href="#">$95.00</a>
+                </div>
               </div>
             </div>
-
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder position-relative">
+                <a href="index.html">
+                  <img src="images/platomejorado3.JPG" alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Cotton off-white shirt</a>
+                  </h5>
+                  <a href="#">$95.00</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder position-relative">
+                <a href="index.html">
+                  <img src="images/platomejorado4.JPG" alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Crop sweater</a>
+                  </h5>
+                  <a href="#">$95.00</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder position-relative">
+                <a href="index.html">
+                  <img src="images/platomejorado5.JPG" alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Crop sweater</a>
+                  </h5>
+                  <a href="#">$95.00</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
+          <use xlink:href="#arrow-left"></use>
+        </svg></div>
+      <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
+          <use xlink:href="#arrow-right"></use>
+        </svg></div>
+    </div>
+  </section>
 
-      <script src="js/jquery.min.js"></script>
-      <script src="js/plugins.js"></script>
-      <script src="js/SmoothScroll.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-      <script src="js/script.min.js"></script>
+  <section class="collection bg-light position-relative py-5">
+    <div class="container">
+      <div class="row">
+        <div class="title-xlarge text-uppercase txt-fx domino">Collection</div>
+        <div class="collection-item d-flex flex-wrap my-5">
+
+          <!-- Imagen -->
+          <div class="col-md-6 column-container">
+            <div class="image-holder">
+              <img src="images/single-image-panambi2.png" alt="collection" class="product-image img-fluid">
+            </div>
+          </div>
+
+          <!-- Texto + WhatsApp -->
+          <div class="col-md-6 column-container bg-white">
+            <div class="collection-content p-5 m-0 m-md-5">
+              <h3 class="element-title text-uppercase">Quiénes somos</h3>
+              <p>
+                Panambí nace del deseo de crear con las manos y el corazón.
+                Cada pieza representa transformación, belleza y conexión con lo natural.
+                Trabajamos de forma artesanal, cuidando cada detalle para ofrecer objetos únicos que acompañen tu
+                día a día.
+                Creemos en la evolución constante, en el valor de lo hecho con amor y en la fuerza de lo simple.
+              </p>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="testimonials py-5 bg-light">
+    <div class="section-header text-center mt-5">
+      <h3 class="section-title">LO QUE DICEN DE PANAMBI</h3>
+    </div>
+    <div class="swiper testimonial-swiper overflow-hidden my-5">
+      <div class="swiper-wrapper d-flex">
+        <div class="swiper-slide">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“Se nota el amor en cada pieza. Todo es delicado y especial.”</p>
+              <div class="review-title text-uppercase">— Sofía, cliente</div>
+            </blockquote>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“Panambí es arte en forma de objeto cotidiano.”</p>
+              <div class="review-title text-uppercase">— Mariana</div>
+            </blockquote>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“Compré un regalo y fue un éxito. Desde el empaque hasta el aroma.”</p>
+              <div class="review-title text-uppercase">— Carla</div>
+            </blockquote>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“No es solo un producto, es un pedacito de calma hecho a mano.”</p>
+              <div class="review-title text-uppercase">— Lucía</div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-swiper-pagination d-flex justify-content-center mb-5"></div>
+  </section>
+
+
+
+  <section class="instagram position-relative">
+    <div class="d-flex justify-content-center w-100 position-absolute bottom-0 z-1">
+      <a href="https://www.instagram.com/amor.de.panambi/" class="btn btn-dark px-5">Seguinos en
+        Instagram</a>
+    </div>
+    <div class="row g-0">
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+
+          <img src="images/bolso2mejorado.jpg" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+
+          <img src="images/cestas1.webp" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+
+          <img src="images/bolso1mejorado.jpg" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+
+          <img src="images/cestas2.webp" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+
+          <img src="images/bolso3mejorado.jpg" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+
+          <img src="images/cestas7.webp" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="mt-5">
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-between py-5">
+
+        <!-- Columna 1: Logo + texto -->
+        <div class="col-md-4 col-sm-12 mb-4">
+          <div class="footer-menu footer-menu-001">
+            <div class="footer-intro mb-4">
+              <a href="index.html">
+                <img src="images/main-logo.png" alt="logo">
+              </a>
+            </div>
+            <p>Cada pieza está hecha a mano con dedicación y cuidado.
+              Diseños únicos, inspirados en la transformación y la belleza de lo natural.</p>
+          </div>
+        </div>
+
+        <!-- Columna 2: Enlaces de categoría -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="footer-menu footer-menu-002">
+            <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
+              <li class="menu-item">
+                <a href="index.html" class="item-anchor">Home</a>
+              </li>
+              <li class="menu-item">
+                <a href="#cesteria" class="item-anchor">Cestería</a>
+              </li>
+              <li class="menu-item">
+                <a href="#bolsos" class="item-anchor">Bolsos</a>
+              </li>
+              <li class="menu-item">
+                <a href="#platos" class="item-anchor">Platos de Sitio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Columna 3: WhatsApp -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="footer-menu footer-menu-004 border-animation-left">
+            <h5 class="widget-title text-uppercase mb-4">Contactanos por WhatsApp</h5>
+            <a href="https://wa.me/5491163217661" target="_blank" aria-label="WhatsApp">
+              <img src="images/whatsapp.png" alt="WhatsApp" style="width: 32px; height: 32px;">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/SmoothScroll.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
 </body>
 
 </html>
