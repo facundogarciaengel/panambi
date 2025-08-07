@@ -84,28 +84,27 @@
 
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
-                <li class="nav-item dropdown">
-                  <a class="nav-link  active" href="#" id="home" aria-haspopup="true" aria-expanded="false">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="Productos" data-bs-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">Productos</a>
-                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownShop">
-                    <li>
-                      <a href="#cesteria" class="dropdown-item item-anchor">Cesteria</a>
-                    </li>
-                    <li>
-                      <a href="#bolsos" class="dropdown-item item-anchor">Bolsos</a>
-                    </li>
-                    <li>
-                      <a href="#platos" class="dropdown-item item-anchor">Platos de sitio</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#footer">Contacto</a>
-                  </a>
-                </li>
+                                 <li class="nav-item">
+                   <a class="nav-link active" href="#billboard">Home</a>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="Productos" data-bs-toggle="dropdown"
+                     aria-haspopup="true" aria-expanded="false">Productos</a>
+                   <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownShop">
+                     <li>
+                       <a href="#cesteria" class="dropdown-item item-anchor">Cesteria</a>
+                     </li>
+                     <li>
+                       <a href="#bolsos" class="dropdown-item item-anchor">Bolsos</a>
+                     </li>
+                     <li>
+                       <a href="#platos" class="dropdown-item item-anchor">Platos de sitio</a>
+                     </li>
+                   </ul>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#footer">Contacto</a>
+                 </li>
               </ul>
             </div>
           </div>
@@ -810,6 +809,80 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/script.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  
+     <!-- Script para cerrar el menú hamburguesa y navegación suave -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Función para scroll suave
+      function smoothScrollTo(target) {
+        const element = document.querySelector(target);
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }
+
+      // Obtener el elemento del menú offcanvas
+      const offcanvasMenu = document.getElementById('offcanvasNavbar');
+      let offcanvasInstance = null;
+      if (offcanvasMenu) {
+        offcanvasInstance = bootstrap.Offcanvas.getOrCreateInstance(offcanvasMenu);
+      }
+
+      // Enlaces del menú (solo los que navegan, no el dropdown toggle)
+      const menuLinks = document.querySelectorAll('.navbar-nav .nav-link:not(.dropdown-toggle), .dropdown-item');
+      menuLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href && href.startsWith('#')) {
+            e.preventDefault();
+            // Cerrar el menú hamburguesa si está abierto
+            if (offcanvasMenu && offcanvasMenu.classList.contains('show')) {
+              offcanvasInstance.hide();
+              setTimeout(function() {
+                smoothScrollTo(href);
+              }, 350); // Espera a que se cierre el menú
+            } else {
+              smoothScrollTo(href);
+            }
+          }
+        });
+      });
+
+      // Enlaces de categorías principales
+      const categoryLinks = document.querySelectorAll('.cat-item');
+      categoryLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href && href.startsWith('#')) {
+            e.preventDefault();
+            if (offcanvasMenu && offcanvasMenu.classList.contains('show')) {
+              offcanvasInstance.hide();
+              setTimeout(function() {
+                smoothScrollTo(href);
+              }, 350);
+            } else {
+              smoothScrollTo(href);
+            }
+          }
+        });
+      });
+
+      // Enlaces del footer
+      const footerLinks = document.querySelectorAll('.footer-menu a[href^="#"]');
+      footerLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href && href.startsWith('#')) {
+            e.preventDefault();
+            smoothScrollTo(href);
+          }
+        });
+      });
+    });
+  </script>
 
 </body>
 
